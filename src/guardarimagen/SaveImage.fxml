@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="468.0" prefWidth="688.0" stylesheets="@../Styles/Image.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="guardarimagen.SaveImageController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="95.0" prefWidth="688.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <JFXButton fx:id="btnAbrir" onMouseClicked="#btnAbrirClick" prefHeight="30.0" prefWidth="60.0" styleClass="btnSaveImage" text="Abrir">
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnGuardar" onMouseClicked="#btnGuardarClick" prefHeight="30.0" prefWidth="93.0" styleClass="btnSaveImage" text="Guardar">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Roboto" size="14.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <ImageView fx:id="imgView" fitHeight="221.0" fitWidth="302.0" layoutX="193.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
